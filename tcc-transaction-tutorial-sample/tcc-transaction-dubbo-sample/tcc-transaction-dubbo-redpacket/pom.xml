@@ -109,4 +109,15 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
+       <build>
+    	<plugins>
+    	<plugin>
+    		<groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+               <configuration>
+                  <port>18082</port>
+               </configuration>
+    	</plugin>
+   		</plugins>
+    </build>
 </project>

@@ -29,6 +29,10 @@ public class PlaceOrderServiceImpl {
     PaymentServiceImpl paymentService;
 
 
+    @Autowired
+    PaymentServiceImpl paymentService;
+
+
     public String placeOrder(long payerUserId, long shopId, List<Pair<Long, Integer>> productQuantities, BigDecimal redPacketPayAmount) {
         Shop shop = shopRepository.findById(shopId);
 
